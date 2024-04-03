@@ -3,6 +3,9 @@ FROM docker.io/zmkfirmware/zmk-build-arm:stable
 WORKDIR /app
 
 COPY config/west.yml config/west.yml
+COPY config/extra_morphs.dtsi config/extra_morphs.dtsi
+
+RUN cat config/extra_morphs.dtsi | tee -a config/macros.dtsi
 
 # West Init
 RUN west init -l config
