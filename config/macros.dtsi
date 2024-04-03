@@ -118,18 +118,18 @@ label = "macro_t_caret";
 #binding-cells = <0>;
 bindings = <&kp AT>, <&kp CARET>;
 };
-macro_hm: hm{
+macro_hm: macro_hm{
 compatible = "zmk,behavior-hold-tap";
-label = "hm";
+label = "macro_hm";
 #binding-cells = <2>;
 tapping-term-ms = <200>;
 quick_tap_ms = <175>;
 flavor = "tap-preferred";
 bindings = <&kp>, <&kp>;
 };
-macro_hm_l: hm_l{
+macro_hm_l: macro_hm_l{
 compatible = "zmk,behavior-hold-tap";
-label = "hm_l";
+label = "macro_hm_l";
 bindings = <&kp>, <&kp>;
 #binding-cells = <2>;
 flavor = "balanced";
@@ -139,9 +139,9 @@ hold-trigger-key-positions = <66 35 36 52 67 65 7 8 9 10 11 12 13 21 22 23 24 25
 hold-trigger-on-release;
 global-quick-tap;
 };
-macro_hm_r: hm_r{
+macro_hm_r: macro_hm_r{
 compatible = "zmk,behavior-hold-tap";
-label = "hm_r";
+label = "macro_hm_r";
 bindings = <&kp>, <&kp>;
 #binding-cells = <2>;
 tapping-term-ms = <200>;
